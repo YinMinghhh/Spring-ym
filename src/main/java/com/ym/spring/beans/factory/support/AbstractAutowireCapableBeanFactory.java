@@ -10,6 +10,15 @@ import java.lang.reflect.Field;
 
 /**
  * 抽象自动装配Bean工厂
+ *
+ * <p>负责处理bean的自动装配(createBean), 包括
+ * 创建, 属性填充(自动装配), 初始化以及执行各种回调的全过程
+ *
+ * <p>通过继承AbstractBeanFactory拥有了单例bean管理能力(getBean)
+ *
+ * <p>定义为抽象类的原因:
+ * 只专注于如何创建bean, 而将从哪里获取bean的定义(BeanDefinition)这个任务交给它的子类去实现
+ *
  * @author YinMing
  * @since 2025/5/7 08:53
  */

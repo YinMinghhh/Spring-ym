@@ -7,6 +7,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 默认可列表Bean工厂
+ *
+ * <p>是BeanFactory接口最完整的实现
+ *
+ * <p>通过继承AbstractAutowireCapableBeanFactory获得了getBean和createBean的能力
+ *
+ * <p>Listable这个词的意义在于可枚举或可列表化. 它指的是BeanFactory拥有的一种遍历和查询其内部注册的所有bean定义的能力.
+ * 这个特性非常关键, 它意味着容器不仅仅是一个被动的"bean仓库", 只能在被调用时根据名字或类型返回一个bean.
+ * 相反, 它变成了一个可审查的, 可查询的容器。
+ *
  * @author YinMing
  * @since 2025/5/7 10:47
  */

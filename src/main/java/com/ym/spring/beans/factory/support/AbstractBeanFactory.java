@@ -5,6 +5,13 @@ import com.ym.spring.beans.factory.BeanFactory;
 import com.ym.spring.beans.factory.config.BeanDefinition;
 
 /**
+ * 抽象Bean工厂
+ *
+ * <p>是一个承上启下的抽象类, 通过类中的抽象方法建立了一套标准的bean获取流程(getBean).
+ *
+ * <p>继承DefaultSingletonBeanRegistry的作用:
+ * 1. 任何 AbstractBeanFactory 的子类, 都天生自动地拥有了管理单例bean缓存的能力.
+ *
  * @author YinMing
  * @since 2025/5/7 08:34
  */
